@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .list-container{
+            margin-top: 30px;
+            background-color: #282828;
+            box-shadow: 0px 4px 4px #00000070;
+            width: 768px;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .archive-title{
+            font-family: 'WaukeganLdoBold';
+            font-size: 32px;
+            color:#FFFFFF;
+            padding-top:10px;
+            padding-left: 20px;
+        }
+
+        .archive-details{
+            display: flex;
+            flex-direction: row;
+            width: 768px;
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-family: 'Inter';
+            font-size: 12px;
+            color:#FFFFFF;
+        }
+
+        .list-item{
+            width: 768px;
+            min-height: 40px;
+            background-color: #000000;
+            margin-bottom: 2px;
+        }
+
+        .list-text{
+            font-family: 'DotMatrix';
+            font-size: 21px;
+        }
+
+        a, u {
+            text-decoration: none;
+        }
+    </style>
+
+    <title>Blog Archive | kikkorino's station</title>
+</head>
+<body>
+    <div class="mid-container">
+        <div class="topbar">
+            <img src="./assets/img/kikkorino-logo.webp" alt="" style="height: 36%; display: block; margin-left: auto; margin-right: auto; margin-top: 32px;">
+            <div class="navbar" style="margin-top: 30px;">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./archive.html">Blog</a></li>
+
+                    <!--
+                    <li><a href="">RSS</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Photos</a></li>
+                    -->
+                </ul>
+            </div>
+            
+        </div>
+        <div class="list-container">
+            <div class="archive-title">
+                Blog Directory
+            </div>
+            <div class="archive-details">
+                <div style="padding-right: 24px;">
+                    Entry No.
+                </div>
+                <div style="padding-right: 288px;">
+                    Title
+                </div>
+                <div style="padding-right: 128px;">
+                    Date
+                </div>
+                <div>
+                    Tagged As
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div style="display: flex; flex-direction: row; padding: 10px 20px;">
+                    <div class="list-text" style="color: #ffffff; width: 78px;">
+                        1
+                    </div>
+                    <a href="lorem-ipsum.html">
+                        <div class="list-text" style="color: #FFD900; width: 312px;">
+                            Lorem Ipsum
+                        </div>
+                    </a>
+                    <div class="list-text" style="color: #80D734; width: 152px;">
+                        2025-02-02
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; flex-wrap: wrap; width: 184px;">
+                        <div class="blog-tag">
+                            # test
+                        </div>
+                        <div class="blog-tag">
+                            # category
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

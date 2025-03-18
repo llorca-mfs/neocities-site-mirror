@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .welcome-signboard {
+        background-color: #282828;
+        width: 768px;
+        height: 128px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .welcome-flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .welcome-ticker {
+        color: #ffd900;
+        font-size: 22px;
+        margin-top: 5px;
+        font-family: "DotMatrix";
+        padding-right: 587px;
+      }
+
+      .welcome-ticker-jp {
+        color: #ffd900;
+        font-size: 24px;
+        margin-top: 2px;
+        font-family: "DotMatrixJP";
+      }
+
+      .clock {
+        background-image: url(./assets/img/clock-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 128px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .center-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #000000;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .hour-hand,
+      .minute-hand,
+      .second-hand {
+        --rotate: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%) rotate(calc(var(--rotate) * 1deg));
+        transform-origin: bottom;
+      }
+
+      .hour-hand {
+        width: 3px;
+        height: 28px;
+        background-color: #000000;
+      }
+
+      .minute-hand {
+        width: 3px;
+        height: 36px;
+        background-color: #000000;
+      }
+
+      .second-hand {
+        width: 2px;
+        height: 48px;
+        background-color: #000000;
+      }
+    </style>
+    <title>Home Page | kikkorino's station</title>
+  </head>
+  <body>
+    <div class="mid-container">
+      <div class="topbar">
+        <img
+          src="./assets/img/kikkorino-logo.webp"
+          alt=""
+          style="
+            height: 36%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 32px;
+          "
+        />
+        <div class="navbar" style="margin-top: 30px">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./archive.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blog-container">
+        <div class="welcome-signboard">
+          <div class="clock">
+            <div class="hour-hand" id="hour-hand"></div>
+            <div class="minute-hand" id="minute-hand"></div>
+            <div class="second-hand" id="second-hand"></div>
+            <div class="center-dot"></div>
+            <script src="clock.js"></script>
+          </div>
+
+          <div class="welcome-flex">
+            <div
+              class="welcome-title"
+              style="
+                font-family: 'WaukeganLdoBold';
+                font-size: 48px;
+                color: #ffffff;
+                padding-left: 8px;
+                padding-top: 20px;
+              "
+            >
+              Welcome to my blog!
+            </div>
+            <div
+              class=""
+              style="
+                width: 587px;
+                height: 32px;
+                background-color: #000000;
+                margin-top: 7px;
+              "
+            >
+              <marquee scrollamount="10">
+                <div style="display: flex; flex-direction: row">
+                  <div class="welcome-ticker">
+                    Arriving at kikkorino's station...
+                  </div>
+                  <div class="welcome-ticker">
+                    Paparating na sa kikkorino's station...
+                  </div>
+                  <div class="welcome-ticker-jp">
+                    まもなくキッコリノの駅です。
+                  </div>
+                </div>
+              </marquee>
+            </div>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h1>THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION</h1>
+
+          <img
+            src="./assets/img/animated-work-in-progress-image-0020.gif"
+            style="display: block; margin-left: auto; margin-right: auto"
+          />
+
+          <h2>Web Development is running smoothly though</h2>
+
+          <i>Hope you like the ticker and analog clock I've made</i>
+
+          <p>
+            Welcome to kikkorino's station! This website is not actually ready
+            yet, but here's a rough draft of what I have in store for it. I've
+            noticed that there's a view statistic here on Neocities and it seems
+            like my website has been getting some of it. I don't want to leave
+            ya'll hungry with a blank website so I have finally implemented the
+            prototype designs that I have made for it on Figma into actual HTML
+            and CSS templates! Yes, I know, creating a prototype in Figma is
+            probably overkill but its what makes the most sense for me
+            wannabe-web developer mind :P. <br /><br />
+            This Home Page is not the only one I have implemented though, as I
+            have also created templates for the Blog Listing and Directory
+            pages. Feel free to look at them by clicking on the corresponding
+            button on the navigation bar or on the list below.
+          </p>
+
+          <ul>
+            <li><a href="archive.html">Blog Archive</a></li>
+            <li><a href="lorem-ipsum.html">Sample Blog Page</a></li>
+          </ul>
+
+          <p>
+            I have not published any content on them though; they're only here
+            to give you an idea on what they will look like in the future when
+            this website actually becomes active.
+          </p>
+
+          <h2>Development Roadmap</h2>
+
+          <p>
+            To keep you up to speed, here is a roadmap of stuff that I have
+            planned for this website
+          </p>
+
+          <form>
+            <input type="checkbox" checked="true" onclick="return false;" />
+            <label> <strike>Host a static website on Neocities</strike> </label
+            ><br />
+            <input type="checkbox" checked="true" onclick="return false;" />
+            <label> <strike>Initial Prototype Design on Figma</strike></label
+            ><br />
+            <input type="checkbox" checked="true" onclick="return false;" />
+            <label>
+              <strike
+                >Implement Prototypes into Actual HTML/CSS Pages</strike
+              ></label
+            ><br />
+            <input type="checkbox" onclick="return false;" />
+            <label> Web Responsiveness (mobile/crossplatform layouts)</label
+            ><br />
+            <input type="checkbox" onclick="return false;" />
+            <label> RSS Feed</label><br />
+            <input type="checkbox" onclick="return false;" />
+            <label> Jekyll integration</label><br />
+          </form>
+
+          <p>
+            Hope to see you in the future when I get to tick all these
+            checkboxes and finally publish stuff on this blog.
+          </p>
+
+          <p>~kikkorino~</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

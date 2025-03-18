@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>(Title of your website)</title>
+    <link>(Link to your website): https://(Website Title).com</link>
+    <atom:link href="(Link to xml file): https://(Website Title)/index.xml" rel="self" type="application/rss+xml"/>
+    <description>(Blog Posts)</description>
+    <language>en-us</language>
+    <lastBuildDate>
+      (Build Date Here - RFC 2822 - https://timestampgenerator.com/) (Ex. Thu, 11 Jan 2024 17:43:33 +0000)
+    </lastBuildDate>
+    <ttl> (Time Stamp Here - https://timestampgenerator.com/) (Ex. 1704594860) </ttl>
+    
+    
+    <item> (Add an item for every blog post)
+        <title> (Blog Post Title) </title>
+        <link>(Ex. https://(Website Title)/blog/blogpost.html) </link>
+        <description><![CDATA[
+        
+           (Copy and paste the html here)
+           
+           
+        ]]> </description>
+        <pubDate>(Date Blog Published - RFC 2822 - https://timestampgenerator.com/) (Ex. Thu, 11 Jan 2024 17:43:33 +0000)</pubDate>
+        <guid>(Link back to the page) (Ex. https://(Website Title)/blog/blogpost.html) </guid>
+    
+    </item>
+    
+
+
+
+</channel>
+</rss>
